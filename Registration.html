@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="icons8-student-registration-100-removebg-preview.png" alt="Laguna State Polytechnic University Logo">
+            </div>
+            <h1>Generic Student Registration Page</h1>
+        </header>
+
+            <main>
+                <section class="form-container">
+                    <h2>GENERIC STUDENT REGISTRATION</h2>
+                    <form action="#" method="post">
+
+                        <div class="form-group">
+                            <label for="studentid">Student ID:</label>
+                            <input
+                                type="text"
+                                id="studentid"
+                                name="studentid"
+                                required
+                                pattern="[0-9]{8}"
+                                maxlength="8"
+                                minlength="8"
+                                placeholder="Enter 8-digit ID">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fullname">Full Name:</label>
+                            <input
+                                type="text"
+                                id="fullname"
+                                name="fullname"
+                                required
+                                placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required
+                                minlength="8"
+                                maxlength="20"
+                                placeholder="Enter your password">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                required
+                                min="16"
+                                max="60"
+                                placeholder="Enter your age">
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="inline">
+                                <label><input type="radio" name="gender" value="male" required>Male</label>
+                                <label><input type="radio" name="gender" value="female" required>Female</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="course">Course:</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select a course</option>
+                                <option value="computer science">Computer Science</option>
+                                <option value="information technology">Information Technology</option>
+                                <option value="software engineering">Software Engineering</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hobbies">Hobbies</label>
+                            <div class="inline">
+                                <label><input type="checkbox" name="hobbies" value="reading">Reading</label>
+                                <label><input type="checkbox" name="hobbies" value="sports">Sports</label>
+                                <label><input type="checkbox" name="hobbies" value="music">Music</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="3"
+                                required
+                                minlength="10"
+                                maxlength="150"
+                                placeholder="Enter your address"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comments">Comments:</label>
+                            <textarea
+                                id="comments"
+                                name="comments"
+                                rows="4"
+                                maxlength="250"
+                                placeholder="Write your comments here..."></textarea>
+                        </div>
+
+                        <button type="submit">REGISTER</button>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2026 Insert Generic Student University. All rights reserved.</p>
+            </footer>
+    </body>
+</html>
